@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgetbook_challenge/features/home/presentation/pages/home_page.dart';
 
 /// The app.
 class App extends StatelessWidget {
@@ -10,11 +11,12 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Interview Challenge'),
         ),
-        body: const Text('Hello Flutter enthusiast!'),
+        body: const HomePage(),
       ),
     );
   }
